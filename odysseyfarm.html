@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odyssey Farm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="odysseyfarm.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lodging.html">Lodging</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" id="search">
+            <button type="button" id="searchButton" class="btn btn-outline-dark">Search</button>
+          </form>
+        </div>
+    </nav>
+    <header class="header" id="header">
+        <h1>Odyssey Farm</h1>
+    </header>
+
+    <img name="Img" src="photos/trees.jpg" width=1280 height=960>
+    <a class="btn btn-outline-dark" href="#" id="previous" onClick="prevImage('Img');clearTimeout(timerID)" role="button">PREVIOUS</a>
+    <a class="btn btn-outline-dark" href="#" id="next" onClick="switchImage('Img');clearTimeout(timerID)" role="button" >NEXT</a>
+    <main>
+
+    <section class="middle-section">
+        <h2>Our story</h2>
+        <br>
+        <p>We are an organic vegetable and bee farm dedicated to developing beautiful and delicious products. </p>
+        <p>Located in Oregon's north coast range, our 16-acre farm in Elsie is a forested oasis, thriving with local wildlife including our neighborhood elk herd, 
+            deer, owls, and the occasional black bear. From microgreens to beets to farm fresh honey, we pride ourselves in cultivating high quality food. 
+            We're a small scale farming operation that cares deeply about the environment and we dedicate ourselves to following best practices for 
+            organic growing that enriches our soil and treats ourselves and our supporters to the very best our land can offer.
+        </p>
+        <p>In addition to our produce and bee bounty, we also host guests in our tiny cabins sprinkled throughout the property and put on
+            events, including farm skill development workshops, concerts, and shared meals.</p>
+        </section>
+        <ul id="list">
+        <p id="list-title" ><b>List of products produced by Odyssey Farm:</b></p>
+            <li>Beets</li>
+            <li>Onions</li>
+            <li>Lettuce</li>
+            <li>Microgreens</li>
+            <li>Artichokes</li>
+            <li>Lavender</li>
+            <li>Honey</li>
+        </ul>
+
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-sm">
+                <ul class="socicons-list">
+                        <li>
+                          <a href='https://www.airbnb.com/' target='_blank'><span class="socicon-airbnb"></span></a> 
+                        </li>
+                          <li>
+                          <a href='https://www.instagram.com/seafaringwoman/?hl=en' target='_blank'><span class="socicon-instagram"></span></a> 
+                        </li> 
+                        <li>
+                          <a href='https://www.facebook.com/' target='_blank'><span class="socicon-facebook"></span></a> 
+                        </li>
+                        <li>
+                                <a href='https://www.meetup.com/' target='_blank'><span class="socicon-meetup"></span></a> 
+                        </li>
+                    </ul>
+                <br>
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <p class="info" id="address">82513 Crowder Rd. Seaside, OR 97138</p>
+                    <img id="logo" src="photos/logo.jpg" width=125 height=125>
+                    <p id="byline">Website by <a href="https://chelseamariehicks.com/" style="color:#b0dcf7">Chelsea Marie Hicks</a></p>
+                </div>
+                <div class="col-sm">
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21911.26749015807!2d-123.6081100014012!3d45.88846568751283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5494940e247910b7%3A0xf93aacc9672b2462!2s82513+Crowder+Rd%2C+Seaside%2C+OR+97138!5e0!3m2!1sen!2sus!4v1564338462563!5m2!1sen!2sus" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>        
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="odysseyFarm.js"></script>
+</body>
+</html>
